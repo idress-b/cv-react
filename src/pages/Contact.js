@@ -11,6 +11,7 @@ const Contact = () => {
     <main>
       <div className="contact">
         <Logo />
+        <Mouse />
         <Navigation />
         <Buttons left={"/projet4"} />
         <ContactUs />
