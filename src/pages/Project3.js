@@ -2,7 +2,7 @@ import React from "react";
 
 import Project from "../components/Project";
 
-import Navigation from "../components/Navigation";
+
 import Buttons from "../components/Buttons";
 import SocialNetworks from "../components/SocialNetworks";
 import NavButtons from "../components/NavButtons";

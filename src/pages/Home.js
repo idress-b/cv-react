@@ -1,5 +1,4 @@
 import React from "react";
-import Mouse from "../components/Mouse";
 
 import SocialNetworks from "../components/SocialNetworks";
 import Buttons from "../components/Buttons";
