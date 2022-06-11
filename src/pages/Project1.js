@@ -1,17 +1,16 @@
 import React from "react";
 import Project from "../components/Project";
-import Mouse from "../components/Mouse";
-import Navigation from "../components/Navigation";
+
 import Buttons from "../components/Buttons";
 import Logo from "../components/Logo";
 import SocialNetworks from "../components/SocialNetworks";
+import NavButtons from "../components/NavButtons";
 
 const Project1 = () => {
   return (
     <div className="project">
-      <Mouse />
       <Logo />
-      <Navigation />
+      <NavButtons />
       <SocialNetworks />
       <Project projectId={0}>
         <a

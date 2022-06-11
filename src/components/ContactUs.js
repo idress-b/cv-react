@@ -37,24 +37,30 @@ const ContactUs = () => {
     <div className="form-container">
       <h2>Formulaire de contact</h2>
       <form ref={form} onSubmit={sendEmail} className="form-content">
-        <label>Nom</label>
-        <input
-          type="text"
-          name="user_name"
-          required
-          autoComplete="off"
-          id="name"
-        />
-        <label>Email</label>
-        <input
-          type="email"
-          name="user_email"
-          id="email"
-          required
-          autoComplete="off"
-        />
-        <label>Message</label>
-        <textarea name="message" id="mess" required />
+        <div>
+          <label>Nom</label>
+          <input
+            type="text"
+            name="user_name"
+            required
+            autoComplete="off"
+            id="name"
+          />
+        </div>
+        <div>
+          <label>Email</label>
+          <input
+            type="email"
+            name="user_email"
+            id="email"
+            required
+            autoComplete="off"
+          />
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea name="message" id="mess" required />
+        </div>
         <input type="submit" value="Envoyer" className="button hover" />
       </form>
       {formMessage && (

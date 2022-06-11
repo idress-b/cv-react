@@ -1,0 +1,52 @@
+.nav-buttons {
+  position: absolute;
+  top: 1.5rem;
+  left: 5.5rem;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    border-radius: 150px;
+
+    color: white;
+  }
+}
+
+.menu {
+  background-color: $color-5;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: relative;
+  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1),
+    transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+}
+
+.menu:hover {
+  box-shadow: 0 0 1px 5px #61c3ed71, 0 0 1px 10px #61c3ed21,
+    0 0 1px 15px #61c3ed21;
+}
+.sub-menu {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  // color: rgb(76, 17, 203);
+  color: #61c2ed;
+  opacity: 0;
+
+  transition: all 0.5s ease;
+}
+.menu:hover .sub-menu {
+  opacity: 1;
+  transform: translate(-50%, 280%);
+}
+
+.icon {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

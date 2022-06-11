@@ -1,7 +1,11 @@
 import React from "react";
 
 const Logo = () => {
-  return <span className="logo">IB</span>;
+  return (
+    <div className="logo">
+      IB <span>Idress BENCHELLALI</span>
+    </div>
+  );
 };
 
 export default Logo;

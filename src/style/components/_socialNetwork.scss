@@ -1,12 +1,12 @@
 .social-network {
   position: absolute;
   right: 1.4rem;
-  top: 0;
-  width: 23%;
-  font-size: 1.9rem;
+  bottom: 1.5rem;
+  // width: 23%;
+  font-size: 2.2rem;
 
   @media screen and (max-width: 650px) {
-    width: 30%;
+    // width: 30%;
   }
 
   ul {
@@ -16,12 +16,15 @@
     justify-content: space-around;
 
     @media screen and (max-width: 450px) {
-      min-width: 100%;
+      // min-width: 100%;
     }
 
     a {
       padding: 1rem;
       transition: 1.1s ease-out;
+      i {
+        color: $color-5;
+      }
     }
   }
 }
