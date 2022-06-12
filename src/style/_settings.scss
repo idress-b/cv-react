@@ -33,7 +33,7 @@ $red: rgb(253, 87, 87);
   }
 }
 html {
-  scroll-behavior: unset;
+//  scroll-behavior: unset;
 }
 a,
 a:visited {
@@ -41,10 +41,10 @@ a:visited {
 }
 body {
   font-family: $font-1;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $color-1;
   color: $black;
-  overflow: hidden;
+ // overflow: hidden;
 
   @media screen and (max-width: 430px) {
     position: relative;
