@@ -3,14 +3,15 @@ import { projectsData } from "../data/projectsData";
 
 const Project = ({ projectId, children }) => {
   const [currentProject] = useState(projectsData[projectId]);
-  const [left, setLeft] = useState();
-  const [top, setTop] = useState();
-  const [size, setSize] = useState();
 
-  useEffect(() => {
-    setLeft(Math.floor(Math.random() * 200 + 700) + "px");
-    setTop(Math.floor(Math.random() * 200 + 150) + "px");
-    setSize("scale(" + (Math.random() + 0.7) + ")");
+  const [posCircle, setPosCircle] = useState({ left: 0, top: 0, size: 1 });
+  useEffect((posCircle) => {
+    setPosCircle({
+      ...posCircle,
+      left: Math.floor(Math.random() * 200 + 700) + "px",
+      top: Math.floor(Math.random() * 200 + 150) + "px",
+      scale: "scale(" + (Math.random() + 0.7) + ")",
+    });
   }, []);
 
   return (
@@ -36,7 +37,9 @@ const Project = ({ projectId, children }) => {
             alt={currentProject.title}
           />
         </div>
-        <div className="button-container">
+      </div>
+      <div className="button-container">
+        <span>
           <a
             href={currentProject.link}
             target="_blank"
@@ -44,12 +47,17 @@ const Project = ({ projectId, children }) => {
           >
             <button className="button  hover ">Voir le site</button>
           </a>
-          {children}
-        </div>
+        </span>
+        <span>{children}</span>
       </div>
+
       <span
         className="random-circle"
-        style={{ left, top, transform: size }}
+        style={{
+          left: posCircle.left,
+          top: posCircle.top,
+          transform: posCircle.size,
+        }}
       ></span>
     </div>
   );

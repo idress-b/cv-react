@@ -1,18 +1,16 @@
 import React from "react";
-import Logo from "../components/Logo";
 
 import NavButtons from "../components/NavButtons";
-
 import ContactUs from "../components/ContactUs";
 import SocialNetworks from "../components/SocialNetworks";
+import Buttons from "../components/Buttons";
 
 const Contact = () => {
   return (
     <main>
       <div className="contact">
-        <Logo />
         <NavButtons />
-
+        <Buttons left={"/projet4"} />
         <ContactUs />
         <div className="contact-infos">
           <div className="adress">
@@ -31,8 +29,8 @@ const Contact = () => {
               <p>idress.benchellali@gmail.com</p>
             </div>
           </div>
-          <SocialNetworks />
         </div>
+        <SocialNetworks />
       </div>
     </main>
   );

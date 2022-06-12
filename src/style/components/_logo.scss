@@ -1,14 +1,15 @@
 .logo {
-  position: absolute;
+  position: relative;
   font-family: $font-2;
   color: white;
   font-size: 2rem;
-  user-select: none;
-  top: 1rem;
-  left: 1.4rem;
+  text-align: center;
+  display: inline;
+  padding: 0.1rem 0.5rem 0.2rem;
   border-radius: 50%;
-  border: 1px solid $color-5;
-  padding: 0.3rem 0.5rem;
+  align-self: center;
+  margin: 10px;
+  border: 1px solid rgb(135, 135, 135);
   background: linear-gradient(
     to right,
     rgb(106, 17, 203) 0%,
@@ -17,6 +18,7 @@
 
   span {
     position: absolute;
+    text-align: left;
     top: 10px;
     left: 0;
     opacity: 0;

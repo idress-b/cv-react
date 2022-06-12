@@ -1,11 +1,12 @@
 .nav-buttons {
-  position: absolute;
-  top: 1.5rem;
-  left: 5.5rem;
-
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
   li {
     list-style: none;
     display: inline-block;
+    justify-content: column;
+    margin-top: 15px;
     margin-left: 15px;
     position: relative;
     border-radius: 150px;
