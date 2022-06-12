@@ -1,8 +1,8 @@
 import React from "react";
 
 import SocialNetworks from "../components/SocialNetworks";
-import { NavLink } from "react-router-dom";
 import NavButtons from "../components/NavButtons";
+import Buttons from "../components/Buttons";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
@@ -23,6 +23,7 @@ const Home = () => {
   return (
     <div className="home">
       <NavButtons />
+      <Buttons right={"/projet1"} />
 
       <div className="home-main">
         <div className="main-content">
@@ -37,9 +38,9 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <NavLink to="/projet1" className="left hover">
-        <button className="button-home">Commencer la visite {">>"}</button>
-      </NavLink>
+      <a href="/assets/doc/CV_Idress_Benchellali.pdf">
+        <button className="button-home">Télécharger le CV</button>
+      </a>
 
       <SocialNetworks />
     </div>
