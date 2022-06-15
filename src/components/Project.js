@@ -15,27 +15,29 @@ const Project = ({ projectId, children }) => {
   }, []);
 
   return (
-    <div className="project-main">
-      <div className="project-content">
-        <h1>{currentProject.title}</h1>
-        <p>{currentProject.date}</p>
-        <ul className="languages">
-          {currentProject.languages.map((item) => {
-            return <li key={item}>{item}</li>;
-          })}
-        </ul>
-      </div>
-      <div className="img-content">
-        <div className="img-container hover">
-          <span>
-            <h3>{currentProject.title}</h3>
-            <p>{currentProject.infos}</p>
-          </span>
-          <img
-            className="img"
-            src={currentProject.img}
-            alt={currentProject.title}
-          />
+    <>
+      <div className="project-main">
+        <div className="project-content">
+          <h1>{currentProject.title}</h1>
+          <p>{currentProject.date}</p>
+          <ul className="languages">
+            {currentProject.languages.map((item) => {
+              return <li key={item}>{item}</li>;
+            })}
+          </ul>
+        </div>
+        <div className="img-content">
+          <div className="img-container hover">
+            <span>
+              <h3>{currentProject.title}</h3>
+              <p>{currentProject.infos}</p>
+            </span>
+            <img
+              className="img"
+              src={currentProject.img}
+              alt={currentProject.title}
+            />
+          </div>
         </div>
       </div>
       <div className="button-container">
@@ -59,7 +61,7 @@ const Project = ({ projectId, children }) => {
           transform: posCircle.size,
         }}
       ></span>
-    </div>
+    </>
   );
 };
 

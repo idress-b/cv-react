@@ -12,7 +12,7 @@ const Contact = () => {
         <NavButtons />
         <Buttons left={"/projet4"} />
         <ContactUs />
-        <div className="contact-infos">
+        {/* <div className="contact-infos">
           <div className="adress">
             <div className="content">
               <h4>
@@ -29,7 +29,7 @@ const Contact = () => {
               <p>idress.benchellali@gmail.com</p>
             </div>
           </div>
-        </div>
+        </div> */}
         <SocialNetworks />
       </div>
     </main>
