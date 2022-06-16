@@ -11,7 +11,7 @@ const Project2 = () => {
       <NavButtons />
       <Project projectId={1} >
       <a
-          href="https://github.com/idress-b/drapeauxgi"
+          href="https://github.com/idress-b/drapeaux"
           target="_blank"
           rel="noopener noreferrer"
         >
