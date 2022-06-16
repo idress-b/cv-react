@@ -9,9 +9,9 @@ const Project4 = () => {
   return (
     <div className="project">
       <NavButtons />
-      <Project projectId={3} />
-      <Buttons left={"/projet3"} />
-      <Buttons right={"/projet5"} />
+      <Project projectId={4} />
+      <Buttons left={"/projet4"} />
+      <Buttons right={"/contact"} />
       <SocialNetworks />
     </div>
   );

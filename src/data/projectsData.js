@@ -37,4 +37,13 @@ export const projectsData = [
     img: "./assets/img/otm.jpg",
     link: "https://outillage-du-mecanicien.fr/",
   },
+  {
+    id: 4,
+    title: "La Boutique",
+    date: "Mai 2022",
+    languages: ["Symfony", "Php"],
+    infos: "Boutique e-commerce basée sur Symfony 5",
+    img: "./assets/img/boutique-symfony.jpg",
+    link: "https://idress-boutique.herokuapp.com/",
+  },
 ];
