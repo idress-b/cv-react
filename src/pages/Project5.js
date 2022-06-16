@@ -9,7 +9,15 @@ const Project4 = () => {
   return (
     <div className="project">
       <NavButtons />
-      <Project projectId={4} />
+      <Project projectId={4} >
+      <a
+          href="https://github.com/idress-b/boutique-symfony"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="button secondary hover">Code Github</button>
+        </a>
+        </Project>
       <Buttons left={"/projet4"} />
       <Buttons right={"/contact"} />
       <SocialNetworks />
