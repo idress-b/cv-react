@@ -33,8 +33,7 @@ const Home = () => {
             <Cursor />
           </h2>
           <p>
-            Pour moi le rôle du développeur est de maîtriser les meilleurs
-            outils pour créer la plus belle expérience digitale.
+            Dévoué dans mes missions, j'ai hâte de collaborer avec vous!.
           </p>
         </div>
       </div>
