@@ -33,7 +33,7 @@ const Home = () => {
             <Cursor />
           </h2>
           <p>
-            Dévoué dans mes missions, j'ai hâte de collaborer avec vous!.
+            Dévoué dans mes missions, j'ai hâte que nous collaborions ensemble !
           </p>
         </div>
       </div>
