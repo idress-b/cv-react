@@ -8,7 +8,8 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 const Home = () => {
   const { text } = useTypewriter({
     words: [
-      "Web",
+      "IOS",
+      "SwiftUI",
       "Front-end",
       "Back-end",
       "react Js",
@@ -33,6 +34,7 @@ const Home = () => {
             <Cursor />
           </h2>
           <p>
+            Mon parcours et ma passion m'ont mené au métier de développeur IOS.
             Pour moi le rôle du développeur est de maîtriser les meilleurs
             outils pour créer la plus belle expérience digitale.
           </p>

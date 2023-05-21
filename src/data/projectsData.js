@@ -37,4 +37,13 @@ export const projectsData = [
     img: "./assets/img/otm.jpg",
     link: "https://outillage-du-mecanicien.fr/",
   },
+  {
+    id: 4,
+    title: "Memory",
+    date: "Avril 2023",
+    languages: ["Swift", "SwiftUI"],
+    infos: "Petit projet de jeu de mémoire réalisé en SwiftUi",
+    img: "./assets/img/memoryApp.png",
+    link: "https://github.com/idress-b/memory-swiftui",
+  },
 ];
